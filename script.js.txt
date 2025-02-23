@@ -1,0 +1,38 @@
+document.getElementById('triangle').addEventListener('click', function() {
+    document.getElementById('initialScreen').style.display = 'none';
+    document.getElementById('welcomeScreen').style.display = 'block';
+});
+
+document.getElementById('loginBtn').addEventListener('click', function() {
+    document.getElementById('welcomeScreen').style.display = 'none';
+    document.getElementById('loginForm').style.display = 'block';
+});
+
+document.getElementById('freelancer').addEventListener('click', function() {
+    document.getElementById('choiceScreen').style.display = 'none';
+    document.getElementById('searchScreen').style.display = 'block';
+});
+
+document.getElementById('client').addEventListener('click', function() {
+    document.getElementById('choiceScreen').style.display = 'none';
+    document.getElementById('searchScreen').style.display = 'block';
+});
+
+document.getElementById('sendBtn').addEventListener('click', function() {
+    alert('Search functionality to be implemented!');
+});
+
+document.getElementById('loginSubmit').addEventListener('click', function() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    if (email && password) {
+        alert('Login successful! (This is a demo)');
+    } else {
+        alert('Please enter both email and password.');
+    }
+});
+
+document.getElementById('signUpLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    alert('Sign-up functionality to be implemented!');
+});
